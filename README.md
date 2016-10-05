@@ -1,4 +1,4 @@
-# gpgs_cloudsave
+# GPGCloudStorage
 
 Overview
 
