@@ -246,7 +246,6 @@ public class GPGCloudStorage
         }
     }
 
-
 #else
 
     //For Debug
