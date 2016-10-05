@@ -7,6 +7,7 @@ UnityでGoogle Play Game Servicesのクラウドセーブ・ロード機能を�
 ## Requirement
 
 Google Play Games plugin for Unity  Ver.0.9.34 or higher Required
+[https://github.com/playgameservices/play-games-plugin-for-unity](https://github.com/playgameservices/play-games-plugin-for-unity)
 
 ## Usage
 
