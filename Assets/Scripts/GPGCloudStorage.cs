@@ -151,7 +151,7 @@ public class GPGCloudStorage
         newDataRaw = writeData;
 
         // SAVE CALLBACK: Handle the result of a write
-        (SavedGameRequestStatus, game) writeCallback = 
+        Action<SavedGameRequestStatus, game> writeCallback = 
         (SavedGameRequestStatus status, ISavedGameMetadata game) => 
         {
             if (status == SavedGameRequestStatus.Success) 
@@ -166,7 +166,7 @@ public class GPGCloudStorage
         };
 
         // LOAD CALLBACK: Handle the result of a binary read
-        (SavedGameRequestStatus, byte[]) readBinaryCallback = 
+        Action < SavedGameRequestStatus, byte[]> readBinaryCallback = 
         (SavedGameRequestStatus status, byte[] data) => 
         {
             if (status == SavedGameRequestStatus.Success) 
