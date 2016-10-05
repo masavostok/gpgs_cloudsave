@@ -8,3 +8,11 @@ UnityでGoogle Play Game Servicesのクラウドセーブ・ロード機能を�
 
 Google Play Games plugin for Unity  Ver.0.9.34 or higher Required
 
+## Usage
+
+```
+var gpg = new GPGCloudStorage();
+gpg.GPG_CloudSave("fileName", "data_string", (bool success) => { ... });
+gpg.GPG_CloudLoad("fileName", (string data) => { ... });
+```
+
