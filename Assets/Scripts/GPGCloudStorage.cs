@@ -10,7 +10,8 @@ using UnityEngine.SocialPlatforms;
 /**
  * Google Play Games plugin for Unity
  * https://github.com/playgameservices/play-games-plugin-for-unity
- * 
+ * バージョン 0.9.34 以上が必要
+ *
  * GooglePlayGame クラウドセーブ機能
  * ※以下のメソッドを使ってください
  *  GPG_SignIn
@@ -151,7 +152,7 @@ public class GPGCloudStorage
         newDataRaw = writeData;
 
         // SAVE CALLBACK: Handle the result of a write
-        (SavedGameRequestStatus, game) writeCallback = 
+        Action <SavedGameRequestStatus, game> writeCallback = 
         (SavedGameRequestStatus status, ISavedGameMetadata game) => 
         {
             if (status == SavedGameRequestStatus.Success) 
@@ -166,7 +167,7 @@ public class GPGCloudStorage
         };
 
         // LOAD CALLBACK: Handle the result of a binary read
-        (SavedGameRequestStatus, byte[]) readBinaryCallback = 
+        Action <SavedGameRequestStatus, byte[]> readBinaryCallback = 
         (SavedGameRequestStatus status, byte[] data) => 
         {
             if (status == SavedGameRequestStatus.Success) 
