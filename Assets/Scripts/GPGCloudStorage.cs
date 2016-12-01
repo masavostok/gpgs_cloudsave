@@ -262,7 +262,7 @@ public class GPGCloudStorage
         onComplete("");
     }
 
-    public void GPG_CloudSave(string fileName, string writeString, Action<string> onComp)
+    public void GPG_CloudSave(string fileName, string writeString, Action<string> onComplete)
     {
         onComplete(null);
     }
