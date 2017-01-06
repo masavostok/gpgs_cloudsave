@@ -152,7 +152,7 @@ public class GPGCloudStorage
         newDataRaw = writeData;
 
         // SAVE CALLBACK: Handle the result of a write
-        Action <SavedGameRequestStatus, game> writeCallback = 
+        Action <SavedGameRequestStatus, ISavedGameMetadata> writeCallback = 
         (SavedGameRequestStatus status, ISavedGameMetadata game) => 
         {
             if (status == SavedGameRequestStatus.Success) 
